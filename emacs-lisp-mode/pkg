@@ -1,0 +1,8 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# contributor: viniciussbs <vinicius.sbs@gmail.com>
+# name: package install unless already installed
+# key: pkg
+# --
+;; $1${ - description}
+(unless (package-installed-p '$1) (package-install '$1))
+$0
