@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# contributor: viniciussbs <vinicius.sbs@gmail.com>
+# name: Component using Module.js
+# key: component
+# --
+Module("${1:Component.}${2:MyComponent}", function($2){
+  $2.fn.initialize = function(${3:element}, ${4:settings}) {
+    this.$3 = $3;
+    
+    ${5:this.$4 = $.extend({
+      ${6:// default $4}
+    }, $4 || {});}
+
+    $0
+  }
+});
