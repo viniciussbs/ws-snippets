@@ -4,13 +4,11 @@
 # key: component
 # --
 Module("${1:Component.}${2:MyComponent}", function($2){
-  $2.fn.initialize = function(${3:element}, ${4:settings}) {
+  $2.fn.initialize = function(${3:element}${4:, ${5:settings}}) {
     this.$3 = $3;
-    
-    ${5:this.$4 = $.extend({
-      ${6:// default $4}
-    }, $4 || {});}
-
+    ${6:this.$5 = $.extend({
+      ${7:// default $5}
+    }, $5 || {});}
     $0
   }
 });
